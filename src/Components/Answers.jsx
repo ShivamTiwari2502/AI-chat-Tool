@@ -39,9 +39,9 @@ const Answers = ({ ans, idx, totalRes, type }) => {
         <div>
             {
                 idx === 0 && totalRes > 1 ?
-                    <span className='text-xl block dark:text-white text-zinc-800'> {answer} <br /> 
+                    <span className='text-xl pt-4 block dark:text-white text-zinc-800'> {answer} <br /> 
                     </span>
-                     : heading ? <span className='pt-4 text-lg dark:text-white text-zinc-800'> {answer} <br /></span>
+                     : heading ? <span className='pt-4 text-lg block dark:text-white text-zinc-800'> {answer} <br /></span>
                         : <span className={type == 'q' ? 'pl-1' : null}>
                             <ReactMarkdown components={renderer}>
                                 {answer}
